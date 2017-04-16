@@ -1,3 +1,4 @@
-age = 50
-retire = 65
-print ('time to retire:', retire - age)
+print ("Start of my program")
+num_list = {1,2,3,4,5,6,7,8,9,10}
+for item in num_list:
+    print ('Number:', item)
