@@ -1,4 +1,5 @@
 print ("Start of my program")
-num_list = {1,2,3,4,5,6,7,8,9,10}
-for item in num_list:
-    print ('Number:', item)
+def currency_convert(rate,euros):
+    dollars=rate*euros
+    return dollars
+print(currency_convert(1.09,1000))
