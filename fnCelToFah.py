@@ -8,7 +8,10 @@ def celtofahr(celsius):
 
 celcius=input("Enter temp in celcius: ")
 print(celtofahr(celcius))
-
+# file writing example
 temperatures=[10,-20,-289,100]
+file=open("temps-in-farh.txt",'w')
 for i in temperatures:
-    print(celtofahr(i))
+    if float(i) > -273.15:
+        file.write(str(celtofahr(i))+"\n")
+file.close()
