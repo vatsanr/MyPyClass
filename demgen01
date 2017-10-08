@@ -1,0 +1,14 @@
+from barnum import gen_data
+
+
+def gen_data(lines,file):
+    for i in range (0,lines):
+      name=gen_data.create_name()
+      job_title=gen_data.create_job_title()
+      phone=gen_data.create_phone()
+      address=gen_data.create_city_state_zip()
+      file.write(name,job_title,phone,address)
+
+file=open("demographic.dat",'w')
+gen_data(100,file)
+file.close()
